@@ -10,7 +10,7 @@ Feature:  Manage a To-Do list
     | Buy groceries |
     | Pay bills |
     When the user lists all tasks
-    Then the output should contain
+    Then the output should contains
     | Task           |
             | Buy groceries  |
             | Pay bills      |
@@ -36,7 +36,7 @@ Feature:  Manage a To-Do list
     | Buy groceries |
     | Pay bills |
     When the user wants to display the information of the task "Pay bills"
-    Then the to-do list displays the information of that task
+    Then the to-do list displays the information of the task "Pay bills"
 
     Scenario: Modify the name of a task
     Given the to-do list contains tasks

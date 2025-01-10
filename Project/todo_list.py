@@ -34,7 +34,7 @@ class ToDoList:
                 task.task_complete()
                 print (f"Task: {task.task_name} has been completed!")
                 return
-        print(f"Task '{task_name}' not found.")
+        print(f"Task {task_name} not found.")
         
     #Clear the entire to-do list
     def clear_to_do_list (self):
@@ -45,10 +45,9 @@ class ToDoList:
     def display_task (self, task_name):
         for task in self.tasks:
             if task.task_name == task_name:
-                print(f"Task: {task.task_name}")
-                print(f"Status: {task.status}")
+                print(f"Task: {task.task_name} - Status: {task.status}")
                 return
-        print(f"Task '{task_name}' not found.")
+        print(f"Task {task_name} not found.")
 
     #Modify the name of a task
     def modify_task(self, old_name, new_name):
